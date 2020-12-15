@@ -60,6 +60,10 @@
 - [ ] Как можно выразить этапы в терминах рисков?
 - [ ] Какие требования следует добавить в начало ЖЦ?
 - [ ] Связываем Шаблон архитектурного документа с вехами ЖЦ
+- [ ] Process/Uncertainty leads to: 
+- pure sprints with architecture DoD or
+- RUP-like increments within phases and architecture stabilisation or
+- Sequential process with up-front strict phases and may be iterations not sprints
 
 Что определяет архитектурные решения (1/0.5)
 -------------------------------------
