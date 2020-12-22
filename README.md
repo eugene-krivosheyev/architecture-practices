@@ -50,6 +50,7 @@
 - [ ] Какие артефакты архитектор ждет от них?
 - [ ] Какие артефакты они ожидают от архитектора?
 - [ ] Продолжаем Шаблон архитектурного документа
+- [стейкхолдеры](https://www.stakeholdermap.com/stakeholders-it-project.html)
 - коммуникационные задачи архитектора
 
 Жизненный цикл системы (1/0.5)
@@ -60,10 +61,10 @@
 - [ ] Как можно выразить этапы в терминах рисков?
 - [ ] Какие требования следует добавить в начало ЖЦ?
 - [ ] Связываем Шаблон архитектурного документа с вехами ЖЦ
-- [ ] Process/Uncertainty leads to: 
-- pure sprints with architecture DoD or
-- RUP-like increments within phases and architecture stabilisation or
-- Sequential process with up-front strict phases and may be iterations not sprints
+- [ ] Вехи зависят от степени неопределнности: 
+- каждый спринт независим и требует существенной архитектурной работы
+- спринты образуют [RUP-like вехи](https://sceweb.uhcl.edu/helm/RationalUnifiedProcess/process/itrwkfls/iwf_iwfs.htm), архитектура постепенно стабилизируется
+- последовательный процесс с изначально стабильной архитектурой
 - [ ] Неочевидные фазы опытной, промышленной эксплуатации и вывода из эксплуатации, влияющие на требования к системе
 
 Что определяет архитектурные решения (1/0.5)
@@ -76,18 +77,18 @@
 - Инфраструктура разработки, тестирования, эксплуатации
 - [ ] Почему такая последовательность приоритетов?
 - [ ] Но так же ограничения формируются _внутри_ команды _в процессе_ производства:
-- Атрибуты внутренней модели качества
-- Архитектурные гайдлайны/соглашения
+- Атрибуты внутренней модели качества (ПТП+Г)
+- Архитектурные [гайдлайны/соглашения](https://www.mediawiki.org/wiki/Architecture_guidelines)
 - [ ] Продолжаем Шаблон архитектурного документа
 - обоснуйте добавленные архитектурные ограничения
-- обоснуйте добавленные атрибуты внутренней модели качества
+- обоснуйте [добавленные атрибуты](http://www.sqale.org/?page_id=66) внутренней модели качества
 
 Требования как архитектурно значимый артефакт (1/0.5)
 ----------------------------------------------
 - [ ] Даны требования к системе:
-- FR в формате User Story / Job Story
-- NFR в формате атрибутов качества
-- Доменная модель в формате UML-диаграммы классов
+- FR в формате [User Story](https://www.atlassian.com/ru/agile/project-management/user-stories) / [Job Story](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27)
+- NFR в формате [атрибутов качества](https://en.wikipedia.org/wiki/Non-functional_requirement)
+- [Доменная модель в формате UML-диаграммы классов](https://homepage.cs.uiowa.edu/~tinelli/classes/022/Spring15/Notes/chap9.pdf)
 - [ ] Какие ожидания архитектор предъявит к этим требованиям для снижения рисков реализации: 
 - обеспечения корректности,
 - борьбы со сложностью, 
@@ -105,7 +106,7 @@
 - [ ] Основные конфликты и важность в – NFRs (Attribute Driven Design, ADD)
 - [ ] Примеры конфликтов характеристик
 - [ ] Суть инженерии как работа в условиях конфликта характеристик
-- [ ] Trade-off как основная деятельность архитектора (Architecture Tradeoff Analysis Method, ATAM)
+- [ ] Trade-off как основная деятельность архитектора ([Architecture Tradeoff Analysis Method, ATAM](https://en.wikipedia.org/wiki/Architecture_tradeoff_analysis_method))
 - [ ] Приоритезация требований как ключ к trade-offs
 - [ ] Как можно по-другому решить?
 - Принцип спецализации
@@ -115,11 +116,12 @@
 
 Ключевая проблема инженерии #3: неопределённость реализации (1/0.5) 
 ------------------------------------------------------------
-- [ ] В зависимости от степени неопределенности:
+- [ ] В зависимости от степени [неопределенности](https://en.wikipedia.org/wiki/Cynefin_framework):
 - готовое оптимальное решение (best practice)
 - анализ + паттерны (good practices)
 - покупка в проект внешней экспертизы
 - гипотезы + прототипы
+- чистое исследование
 - [ ] Продолжаем Шаблон архитектурного документа
 - документирование решения
 - документирование архитектурных прототипов
@@ -133,6 +135,7 @@
 - [ ] Trade-off: Suite или Best of breed?
 - [ ] Продолжаем Шаблон архитектурного документа
 - [ ] Практики описания архитектурных решений
+- Отход от документирования в коде в пользу [читаемости](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) и [понимаемости](https://martinfowler.com/books/dsl.html) дизайна
 - Подход [Lean к документации архитектурных решений](http://agilemodeling.com/essays/agileDocumentation.htm)
 - Включение в [DoD](https://www.scruminc.com/definition-of-done/) обязательных результатов по документированию
 - Контракты модулей/функций в формате [BDD-сценариев](https://en.wikipedia.org/wiki/Behavior-driven_development)
@@ -148,7 +151,20 @@
 - [ ] Как снизить риски разработки больших и сложных систем?
 - [ ] Декомпозиция
 - [ ] Документация
-- [ ] PoV
+- [ ] [PoV](https://upload.wikimedia.org/wikipedia/commons/5/5b/Conceptual_model_Architectural_description.png)
 - почему структурная декомпозиция так важна?
 - PoV: как увидеть решения за диаграммами 
-- разбор ключевых PoV и скрытых в них атрибутов качества
+- разбор [ключевых PoV](https://www.viewpoints-and-perspectives.info/home/viewpoints/) и скрытых в них атрибутов качества
+
+
+References
+==========
+- [Архитектура](https://ru.wikipedia.org/wiki/Архитектура_системы)
+- [Обзор подходов к описанию архитектуры](http://sewiki.ru/Категория:Архитектурные_подходы)
+- [RUP](https://sceweb.uhcl.edu/helm/RationalUnifiedProcess/)
+- [TOGAF](http://sewiki.ru/TOGAF)
+- [ISO 42010](https://www.iso.org/ru/standard/50508.html)
+- [SWEBoK](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
+- [SEMAT](http://semat.org/essence-user-guide)
+- [Ardoq](https://www.ardoq.com)
+- [Системная инженерия](http://sewiki.ru/Системная_инженерия)
