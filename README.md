@@ -64,6 +64,7 @@
 - pure sprints with architecture DoD or
 - RUP-like increments within phases and architecture stabilisation or
 - Sequential process with up-front strict phases and may be iterations not sprints
+- [ ] Неочевидные фазы опытной, промышленной эксплуатации и вывода из эксплуатации, влияющие на требования к системе
 
 Что определяет архитектурные решения (1/0.5)
 -------------------------------------
@@ -78,6 +79,7 @@
 - Атрибуты внутренней модели качества
 - Архитектурные гайдлайны/соглашения
 - [ ] Продолжаем Шаблон архитектурного документа
+- обоснуйте добавленные архитектурные ограничения
 - обоснуйте добавленные атрибуты внутренней модели качества
 
 Требования как архитектурно значимый артефакт (1/0.5)
@@ -130,6 +132,16 @@
 - модули -> контракты -> инкапсуляция в компоненты
 - [ ] Trade-off: Suite или Best of breed?
 - [ ] Продолжаем Шаблон архитектурного документа
+- [ ] Практики описания архитектурных решений
+- Подход [Lean к документации архитектурных решений](http://agilemodeling.com/essays/agileDocumentation.htm)
+- Включение в [DoD](https://www.scruminc.com/definition-of-done/) обязательных результатов по документированию
+- Контракты модулей/функций в формате [BDD-сценариев](https://en.wikipedia.org/wiki/Behavior-driven_development)
+- Описание структуры системы как [граф зависимостей](https://docs.gradle.org/current/userguide/viewing_debugging_dependencies.html) на [заглушки других сервисов или компонентов системы](https://www.baeldung.com/spring-boot-rest-client-swagger-codegen) в инструменте сборки 
+- Описание структуры системы в форме [IaaC](https://habr.com/ru/company/dododev/blog/465137/) как конфигурация правил файрволов
+- Описание структуры системы в форме IaaC как конфигурации в инструменте [Service Discovery](https://habr.com/ru/post/487706/)
+- Описание структуры системы в форме IaaC как конфигурации [среды работы контейнеров](https://learnk8s.io/visualise-dependencies-kubernetes)
+- Легковесная модель описания основных архитектурных точек зрения [С4](https://c4model.com)
+- Описание [целостной архитектуры](https://sparxsystems.com/resources/tutorials/archimate/index.html) на языке [ArchiMate](https://en.wikipedia.org/wiki/ArchiMate) в различных [средах моделирования](https://certification.opengroup.org/register/archimate-tool)
 
 Ключевая проблема инженерии #5: сложность реализации (3/0.5)
 ------------------------------------------------------
