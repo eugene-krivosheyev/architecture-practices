@@ -168,3 +168,4 @@ References
 - [SEMAT](http://semat.org/essence-user-guide)
 - [Ardoq](https://www.ardoq.com)
 - [Системная инженерия](http://sewiki.ru/Системная_инженерия)
+- [RUP SWA document](https://sceweb.uhcl.edu/helm/RationalUnifiedProcess/process/artifact/ar_sadoc.htm)
